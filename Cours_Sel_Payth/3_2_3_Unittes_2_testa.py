@@ -7,7 +7,7 @@ import time
 class TestAbs(unittest.TestCase):
 
     def test_abs1(self):
-        link = "http://suninjuly.github.io/registrationё1.html"
+        link = "http://suninjuly.github.io/registration1.html"
         browser = webdriver.Chrome()
         browser.get(link)
 
@@ -40,7 +40,7 @@ class TestAbs(unittest.TestCase):
         elements = browser.find_elements(By.CSS_SELECTOR, "div.first_block input")
         for element in elements:
             element.send_keys("Заполнено")
-        assert len(elements) == 3
+        assert len(elements) == 3, f"len(elements) = {len(elements)}"
 
         # Отправляем заполненную форму
         button = browser.find_element(By.CSS_SELECTOR, ".btn")
