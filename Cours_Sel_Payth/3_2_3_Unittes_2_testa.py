@@ -56,7 +56,6 @@ class TestAbs(unittest.TestCase):
         # с помощью assert проверяем, что ожидаемый текст совпадает с текстом на странице сайта
         assert "Congratulations! You have successfully registered!" == welcome_text
 
-            # закрываем браузер после всех манипуляций
         browser.quit()
 
 if __name__ == "__main__":
